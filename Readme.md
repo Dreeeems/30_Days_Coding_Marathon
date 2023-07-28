@@ -47,4 +47,4 @@ Happy coding! 😄
 
 ## Day one :
 
-[Calculator app 🧮(Python)](https://github.com/Dreeeems/30_Days_Coding_Marathon/tree/First_Day)
+[🧮Calculator app (Python)🧮](https://github.com/Dreeeems/30_Days_Coding_Marathon/tree/First_Day)

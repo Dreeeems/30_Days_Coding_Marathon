@@ -42,3 +42,9 @@ If you too are looking to enhance your coding skills and embark on your own codi
 I'm excited to start this 30-day coding journey, challenge myself, and become a better coder with each passing day. Let's embrace continuous improvement and begin the marathon together! 🚀
 
 Happy coding! 😄
+
+## All projects :
+
+### Day one :
+
+    [Calculator app 🧮(Python)](https://github.com/Dreeeems/30_Days_Coding_Marathon/tree/First_Day)

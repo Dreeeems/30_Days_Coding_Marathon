@@ -1,44 +1,40 @@
-# 30 Days Coding Marathon 🚀
+# Calculator App
 
-![Python Icon](https://img.icons8.com/color/96/000000/python.png) ![PHP Icon](https://img.icons8.com/color/96/000000/php.png) ![JavaScript Icon](https://img.icons8.com/color/96/000000/javascript.png)
-
-Welcome to my 30 Days Coding Marathon! 🎉
+🧮 This is a simple calculator application built using Python's `tkinter` library.
 
 ## Introduction
 
-This coding marathon is entirely my own idea and initiative. The purpose is to challenge myself daily and dive into practical projects in Python, PHP, and JavaScript to practice and improve my programming skills.
+The Calculator App provides a basic graphical user interface (GUI) for performing arithmetic calculations. It allows users to input mathematical expressions and obtain the result instantly.
 
-## About Me
+## Features
 
-I am passionate about programming and have decided to embark on this 30-day marathon to enhance my coding abilities and explore various concepts in these three languages.
+✨ The Calculator App offers the following features:
 
-## How It Works
+1. Addition, Subtraction, Multiplication, and Division operations.
+2. Input of numerical values through buttons.
+3. Calculation execution with the "=" button.
+4. Real-time result display in a text box.
+5. Clearing the calculation using the "C" button.
+6. The Enter key can also be used to evaluate the calculation.
 
-- Each day, I will focus on a new project in one of the languages: Python, PHP, or JavaScript.
-- The projects will vary in difficulty levels, starting with beginner-friendly challenges and progressing to more advanced projects.
-- I will document my journey and share my code to inspire and assist others who wish to improve their programming skills.
+## User Interface
 
-## Objectives
+The user interface consists of a window with the following components:
 
-- Have fun coding and learn something new every day.
-- Strengthen my problem-solving skills and programming logic.
-- Explore specific areas like web development, data analysis, and more.
-- Share my progress, connect with fellow coding enthusiasts, and learn from their experiences.
+1. **Display**: A text box where the user can input the mathematical expression and view the result.
 
-## Tracking Progress
+2. **Number Buttons (0-9)**: Buttons labeled with numbers from 0 to 9, enabling the user to input digits into the calculation.
 
-Each day's project will have its own branch in this GitHub repository. I will use branches to organize and track my progress throughout the coding marathon.
+3. **Operation Buttons**: Buttons for addition (+), subtraction (-), multiplication (\*), and division (/), used to include corresponding operations in the calculation.
 
-## Join Me in the Journey
+4. **Equal (=) Button**: Pressing this button calculates the result of the expression and displays it in the text box.
 
-While I won't be actively seeking contributions, you are welcome to follow my coding journey and explore the projects I work on. Feel free to share your thoughts, ideas, or feedback!
+5. **Clear (C) Button**: Pressing this button clears the current calculation from the text box.
 
-## Start Your Own Marathon
+## How to Use
 
-If you too are looking to enhance your coding skills and embark on your own coding marathon, feel free to use this repository as a reference or inspiration for your coding journey.
-
-## Let's Begin the Coding Marathon! 🏃‍♂️
-
-I'm excited to start this 30-day coding journey, challenge myself, and become a better coder with each passing day. Let's embrace continuous improvement and begin the marathon together! 🚀
-
-Happy coding! 😄
+1. Launch the Calculator App.
+2. Use the number buttons (0-9) to input the desired numerical values for the calculation.
+3. Use the operation buttons (+, -, \*, /) to include the corresponding operations in the calculation.
+4. After entering the desired expression, press the "=" button or hit the Enter key to get the result.
+5. To clear the calculation, press the "C" button.

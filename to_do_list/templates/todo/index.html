@@ -1,0 +1,83 @@
+
+{% extends "todo/base.html" %}
+
+{% block body %}
+
+    <h3 class="m-4">All todos</h3>
+    <div class="row">
+        <div class="col-12">
+            {% if todos %}
+                <div class="card border-primary mb-3">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Todo Name</th>
+                                            <th scope="col">Todo description</th>
+                                            <th scope="col">Todo status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for todo in todos %}
+                                        <tr class="table-active">
+                                            <th scope="row">{{ todo.todo_name }}</th>
+                                            <td>
+                                                {{ todo.todo_desc }}</td>
+                                            <td>
+                                                {%  if todo.todo_status == False %}
+                                                <i class="fa-solid fa-x" style="color: #ae0000;"></i>
+                                                {% else %}
+                                                <i class="fa-solid fa-check" style="color: #16640b;"></i>
+                                                {% endif%}
+                                                </td>
+                                            <td><a href="{% url 'edit' todo.pk %}" class="btn btn-warning me-1"><i class="fa-solid fa-pen-to-square"></i></a>  <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{todo.pk}}">
+                                                <i class="fa-solid fa-delete-left fa-lg"></i>
+                                            </button>
+                                        
+                                            <div class="modal" id="delete{{todo.pk}}" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title">Todo {{ todo.todo_name}}</h5>
+                                                   
+                                                        <span aria-hidden="true"></span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Are you sure you want to delete this todo ? </p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <form action="{%  url 'delete' todo.pk %}" method="POST">
+                                                            {% csrf_token %}
+                                                            <input type="submit" class="btn btn-primary" value="Delete">
+                                                        </form>
+                                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Close</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        
+                                        
+                                        </td>
+
+
+                                        </tr>
+                                    {% endfor %}
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            {% else %}
+                <h5 class="alert alert-primary ms-4 mb-">
+                    No todos! 
+                </h5>
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

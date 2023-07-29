@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+*.env
+*.sqlite3
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Django project settings
+*.secret_key
+*.settings_local
+
+# Media and static files (only include in production deployments)
+media/
+static/
+
+# Log files
+*.log
+
+# Database files
+*.db
+
+# Compiled Python files used for packaging
+*.egg-info/
+
+# Test coverage results
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# Development and editor files
+*.bak
+.vscode/
+.idea/
+*.swp
+
+# Ignore Django migration files except __init__.py
+**/migrations/!__init__.py
+
+# Ignore any local customizations to the Python environment
+.python-version
+
+# Ignore any Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore pipenv virtual environment files
+Pipfile
+Pipfile.lock
+
+# Ignore macOS folder attributes
+.DS_Store
+
+# Ignore other project-specific files
+# file.txt
+# folder/

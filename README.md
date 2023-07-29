@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python Logo" width="150" height="150">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="Django Logo" width="150" height="150">
 </p>
 
 ## 📝 Project Overview
@@ -25,7 +24,6 @@ Todo App is a web application built with Django that allows users to create, mod
 - External libraries used:
   - Bootstrap 5 (for styling and layout)
   - Font Awesome (for icons)
-  - jQuery (for interactivity)
 
 ## 🚀 Setup
 
